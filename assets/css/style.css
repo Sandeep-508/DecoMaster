@@ -315,9 +315,29 @@ p {
     top: 0;
 }
 
-.align{
+.align {
     right: 0;
     bottom: 10%;
+}
+
+.pos_alignment {
+    top: 0;
+    left: 0;
+}
+
+.w_h {
+    width: 215px;
+    height: 215px;
+}
+
+.w_h_changes {
+    width: 215px;
+    height: 215px;
+    border-radius: 50%;
+}
+
+.brdr {
+    border: 1px solid black;
 }
 
 .pb-34 {
