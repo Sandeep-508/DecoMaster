@@ -15,6 +15,7 @@
     --text-color: #8A3E74;
     --overflow_sec_num_color: #010080;
     --overflow_sec_back_color: #EEEEEE;
+    --black_color: #000000;
 
     /* font-family */
     --fm: "Poppins", sans-serif;
@@ -195,11 +196,33 @@
     border-image-slice: 1;
     cursor: pointer;
     overflow: hidden;
+    transition: all 300ms linear;
 }
+
+
+
+
 
 .offcanvas-backdrop {
     background: unset;
     backdrop-filter: blur(50px);
+}
+
+.py-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.pr-134 {
+    margin-right: 134px;
+}
+
+.pl-134 {
+    margin-left: 134px;
+}
+
+.pb-42 {
+    padding-bottom: 42px;
 }
 
 .pt-16 {
@@ -254,14 +277,74 @@ p {
     background-color: var(--navbar-color);
 }
 
-
-
 .offcanvas-backdrop.show {
     opacity: unset;
 }
 
 .offcanvas-body {
     background-color: var(--navbar-color);
+}
+
+.my-40 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.right_0 {
+    right: 0;
+}
+
+.min-vh-90 {
+    min-height: 90vh;
+}
+
+@media (min-width: 992.9px) {
+    .hor_lg_line {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        top: 50%;
+        border-bottom: 3px dotted var(--black_color);
+    }
+
+    .ver_lg_line {
+        position: absolute;
+        width: 3px;
+        height: 100%;
+        left: 31.5%;
+        border-right: 3px dotted var(--black_color);
+    }
+
+    .ver_lg_line_2 {
+        position: absolute;
+        width: 3px;
+        height: 100%;
+        right: 33.2%;
+        border-right: 3px dotted var(--black_color);
+    }
+
+    .mt-92 {
+        margin-top: 92px;
+    }
+
+    .mt-82 {
+        margin-top: 82px;
+    }
+
+    .mb-79 {
+        margin-bottom: 79px;
+    }
+
+    .mb-92 {
+        margin-bottom: 92px;
+    }
+}
+
+@media (min-width: 992px) {
+    .py-115 {
+        padding-top: 115px;
+        padding-bottom: 115px;
+    }
 }
 
 @media (min-width: 1024.9px) {
@@ -277,5 +360,36 @@ p {
 
     .d_max_md_none {
         display: none;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+
+    .hor_md_line {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        top: 33.5%;
+        border-bottom: 3px dotted var(--black_color);
+    }
+
+    .ver_md_line {
+        position: absolute;
+        width: 3px;
+        height: 100%;
+        left: 50%;
+        border-right: 3px dotted var(--black_color);
+    }
+
+    .row>* {
+        padding: 0;
+    }
+
+    .ver_md_line_2 {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 31.5%;
+        border-bottom: 3px dotted var(--black_color);
     }
 }
