@@ -34,6 +34,7 @@
 
     /* font-size */
     --fs-16: 16px;
+    --fs-64: 64px;
     --fs-18: 18px;
     --fs-24: 24px;
     --fs-36: 36px;
@@ -46,6 +47,7 @@
     --lh-54: 54px;
     --lh-30: 30px;
     --lh-72: 72px;
+    --lh-96: 96px;
     --lh-36: 36px;
     --lh-27: 27px;
     --lh-216: 216px;
@@ -77,6 +79,10 @@
 
 .fs-16 {
     font-size: var(--fs-16);
+}
+
+.fs-64 {
+    font-size: var(--fs-64);
 }
 
 .fs-18 {
@@ -119,6 +125,10 @@
     line-height: var(--lh-36);
 }
 
+.lh-96 {
+    line-height: var(--lh-96);
+}
+
 .lh-27 {
     line-height: var(--lh-27);
 }
@@ -147,8 +157,16 @@
     color: var(--overflow_sec_num_color);
 }
 
+.overflow_sec_btn_color {
+    background-color: var(--overflow_sec_num_color);
+}
+
 .over_sec_back_color {
     background-color: var(--overflow_sec_back_color);
+}
+
+.brdr-rad-4 {
+    border-radius: 4px;
 }
 
 .gap-45 {
@@ -159,7 +177,19 @@
     position: relative;
 }
 
+.max_width {
+    max-width: 475px;
+}
 
+.py-11 {
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.px-34 {
+    padding-right: 34px;
+    padding-left: 34px;
+}
 
 .items::after {
     content: "";
@@ -200,10 +230,6 @@
     overflow: hidden;
     transition: all 300ms linear;
 }
-
-
-
-
 
 .offcanvas-backdrop {
     background: unset;
@@ -300,7 +326,53 @@ p {
     transform: translate(0, 200px);
 }
 
+.border-rad {
+    border-radius: 50%;
+}
 
+.w_h {
+    width: 215px;
+    height: 215px;
+}
+
+.align_1 {
+    top: 0;
+    left: 0;
+}
+
+.align_3 {
+    top: 0;
+    left: 30%;
+}
+
+.align_5 {
+    top: 0;
+    left: 64%;
+}
+
+.align_7 {
+    top: 0;
+    left: 90%;
+}
+
+.align_2 {
+    bottom: 0;
+    left: 16%;
+}
+
+.align_4 {
+    bottom: 0;
+    left: 48%;
+}
+
+.align_6 {
+    bottom: 0;
+    left: 80%;
+}
+
+.w-140 {
+    width: 140px;
+}
 
 .mt_value {
     margin-top: -20px;
@@ -320,21 +392,7 @@ p {
     bottom: 10%;
 }
 
-.pos_alignment {
-    top: 0;
-    left: 0;
-}
 
-.w_h {
-    width: 215px;
-    height: 215px;
-}
-
-.w_h_changes {
-    width: 215px;
-    height: 215px;
-    border-radius: 50%;
-}
 
 .brdr {
     border: 1px solid black;
@@ -346,6 +404,91 @@ p {
 
 .min-vh-90 {
     min-height: 90vh;
+}
+
+
+
+.brdr_rad_40 {
+    border-radius: 40px;
+}
+
+
+
+
+.brdr-rad {
+    border-radius: 40px;
+}
+
+
+
+.back_color {
+    background-color: var(--overflow_sec_back_color);
+}
+
+
+@media (max-width:2200px) {
+    .changes_sec {
+        min-width: 1800px;
+        min-height: 465px;
+    }
+}
+
+@media (min-width: 2200.9px) {
+    .changes_sec {
+        min-width: 2110px;
+        min-height: 465px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .transform {
+        transform: translate(10px, -50%);
+    }
+
+    .changes_media_screen {
+        background-color: var(--overflow_sec_back_color);
+        border-radius: 40px;
+        position: absolute;
+        /* left: 0; */
+    }
+
+    .left-0 {
+        left: 0%;
+    }
+
+    .right-0 {
+        right: 0;
+    }
+
+    .transform {
+        transform: translate(0, -50%);
+    }
+}
+
+@media (min-width: 992px) {
+    .pt-363px {
+        padding-top: 363px;
+    }
+
+    /* .pb-237px {
+        padding-bottom: 237px;
+    } */
+
+    .pb-237px {
+        padding-bottom: 237px;
+    }
+}
+
+@media (max-width: 992.9px) {
+    .mb-24 {
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 1023.9px) {
+    .d_min_md_none {
+        display: none;
+    }
 }
 
 @media (min-width: 992.9px) {
@@ -397,6 +540,36 @@ p {
     }
 }
 
+@media (max-width: 1400px) {
+    .fs_48 {
+        font-size: var(--fs-48);
+    }
+
+    .fw_500 {
+        font-weight: var(--fw-500);
+    }
+
+    .lh_54 {
+        line-height: var(--lh-54);
+    }
+
+    .fs_24 {
+        font-size: var(--fs-24);
+    }
+
+    .lh_30 {
+        line-height: var(--lh-30);
+    }
+
+    .fw_400 {
+        font-weight: var(--fw-400);
+    }
+
+    .fs_16 {
+        font-size: var(--fs-16);
+    }
+}
+
 @media (min-width: 1024.9px) {
     .d_md_none {
         display: none;
@@ -411,6 +584,24 @@ p {
     .d_max_md_none {
         display: none;
     }
+}
+
+@media (min-width: 768px) {
+    .py-54 {
+        padding-top: 54px;
+        padding-bottom: 53px;
+    }
+
+    .px-136 {
+        padding-right: 136px;
+        padding-left: 136px;
+    }
+
+    .pr-237px {
+        padding-right: 237px;
+    }
+
+
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
@@ -441,6 +632,12 @@ p {
         height: 3px;
         bottom: 31.5%;
         border-bottom: 3px dotted var(--black_color);
+    }
+}
+
+@media (min-width: 1400.9px) {
+    .text_wrap {
+        text-wrap: nowrap;
     }
 }
 
