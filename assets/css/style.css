@@ -392,7 +392,13 @@ p {
     bottom: 10%;
 }
 
+.mb-60 {
+    margin-bottom: 60px;
+}
 
+.pb-60 {
+    padding-bottom: 60px;
+}
 
 .brdr {
     border: 1px solid black;
@@ -423,6 +429,20 @@ p {
 
 .back_color {
     background-color: var(--overflow_sec_back_color);
+}
+
+.changes_adjust {
+    transform: translate(10px, -50%);
+}
+
+.changes_adjust_1 {
+    transform: translate(0, -50%);
+    right: 0;
+}
+
+.changes_adjust_2 {
+    transform: translate(0, -50%);
+    left: 0;
 }
 
 
