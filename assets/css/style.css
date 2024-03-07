@@ -5,6 +5,8 @@
     text-decoration: none !important;
     box-sizing: border-box !important;
     transition: all 300ms linear !important;
+    padding: 0;
+    margin: 0;
 }
 
 :root {
@@ -161,12 +163,47 @@
     background-color: var(--overflow_sec_num_color);
 }
 
+.brdr-rad-22 {
+    border-radius: 22px;
+}
+
+.bottom-10 {
+    bottom: 20px;
+}
+
+.back_color_change {
+    background-color: var(--overflow_sec_num_color);
+}
+
 .over_sec_back_color {
     background-color: var(--overflow_sec_back_color);
 }
 
+.opa_0 {
+    opacity: 0;
+}
+
+.hover_item:hover.opa_1 {
+    opacity: 1;
+}
+
+.items_hov:hover {
+    .d_none {
+        display: none !important;
+    }
+}
+
+.w-90 {
+    width: 90%;
+}
+
 .brdr-rad-4 {
     border-radius: 4px;
+}
+
+.back-img-color {
+    background-color: var(--overflow_sec_num_color);
+    border-radius: 24px;
 }
 
 .gap-45 {
@@ -399,6 +436,8 @@ p {
 .pb-60 {
     padding-bottom: 60px;
 }
+
+
 
 .brdr {
     border: 1px solid black;
