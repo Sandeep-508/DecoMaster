@@ -20,6 +20,7 @@
     --slider_sec_svg_back_color: #DCDCDC;
     --black_color: #000000;
     --back_opaque_color: #00000099;
+    --footer_item_clr: #444444;
 
     /* font-family */
     --fm: "Poppins", sans-serif;
@@ -37,6 +38,7 @@
     /* font-size */
     --fs-16: 16px;
     --fs-64: 64px;
+    --fs-80: 80px;
     --fs-18: 18px;
     --fs-24: 24px;
     --fs-36: 36px;
@@ -81,6 +83,10 @@
 
 .fs-16 {
     font-size: var(--fs-16);
+}
+
+.footer_color {
+    background-color: var(--black_color);
 }
 
 .fs-64 {
@@ -228,14 +234,15 @@
     text-align: center;
 }
 
-.brdr_rad_45 {
-    border-radius: 45px;
-}
-
 .pos_adjustment {
     position: absolute;
-    transform: translate(0, -50%);
+    transform: translate(-50%, -50%);
     top: 0%;
+    left: 50%;
+}
+
+.brdr_rad_45 {
+    border-radius: 45px;
 }
 
 .pl-40 {
@@ -247,9 +254,28 @@
     padding-bottom: 140px;
 }
 
+.w_h_fixing {
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    background-color: var(--footer_item_clr);
+}
+
 .px-200 {
     padding-right: 200px;
     padding-left: 200px;
+}
+
+.pt-80 {
+    padding-top: 80px;
+}
+
+.pt-24 {
+    padding-top: 24px;
+}
+
+.pb-14 {
+    padding-bottom: 14px;
 }
 
 @media (max-width: 1439.9px) {
@@ -263,8 +289,6 @@
         width: 100%;
         height: 100%;
     }
-
-
 }
 
 @media (max-width: 992px) {
@@ -272,6 +296,77 @@
         width: 33.33%;
         padding-left: 12px;
         padding-right: 12px;
+    }
+
+    .fs_80 {
+        font-size: var(--fs-80);
+    }
+
+    .px-100 {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+
+    .py-80 {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .py_2 {
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+    }
+
+    .px_2 {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+
+    .fs_16 {
+        font-size: var(--fs-16);
+    }
+}
+
+@media (max-width: 768px) {
+    .fs_48 {
+        font-size: var(--fs-48);
+    }
+
+    .px-50 {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
+    .py-40 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .pl-20 {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .py-20 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .px-20px {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .fs_36 {
+        font-size: var(--fs-36);
+    }
+
+    .flex_wrap {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 }
 
