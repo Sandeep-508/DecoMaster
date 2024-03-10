@@ -262,6 +262,10 @@
     max-width: 290px;
 }
 
+.d_none {
+    display: none;
+}
+
 .news {
     background: -webkit-gradient(linear, left top, right top, from(#9104E5), color-stop(96.47%, #F93B96));
     background: -o-linear-gradient(left, #9104E5 0%, #F93B96 96.47%);
