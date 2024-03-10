@@ -288,6 +288,10 @@
     border-radius: 45px;
 }
 
+.w-h-adjust:hover {
+    background-image: var(--first_sec_btn_clr);
+}
+
 .pl-40 {
     padding-left: 40px;
 }
