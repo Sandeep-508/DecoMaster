@@ -25,6 +25,27 @@ gsap.from(".to_top", {
 
 
 // loader
+// document.addEventListener("DOMContentLoaded", function () {
+//     setTimeout(function () {
+//         var loadingScreen = document.getElementById("loading-screen");
+//         // var contentElements = document.getElementsByClassName("content");
+//         loadingScreen.style.display = "none";
+//         let content_elements = ["#header", "#choose_us", "#gallery", "#welcome", "#service", "#our_services", "#insipitation", "#team", "#testinom", "#footer"];
+//         for (var i = 0; i < content_elements.length; i++) {
+//             gsap.from(content_elements[i], {
+//                 scale: 0,
+//                 duration: 2,
+//                 y: -155,
+//                 opacity: 0,
+//                 scrollTrigger: {
+//                     trigger: content_elements[i],
+//                     start: "top 50%",
+//                 }
+//             });
+//         }
+//     }, 3000);
+// });
+
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         var loadingScreen = document.getElementById("loading-screen");
@@ -32,5 +53,3 @@ document.addEventListener("DOMContentLoaded", function () {
         loadingScreen.style.display = "none";
     }, 3000);
 });
-
-
