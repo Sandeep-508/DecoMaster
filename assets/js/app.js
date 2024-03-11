@@ -27,17 +27,10 @@ gsap.from(".to_top", {
 // loader
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
-        document.getElementById("loading-screen").style.display = "none";
-        document.getElementsByClassName("content").style.display = "block";
+        var loadingScreen = document.getElementById("loading-screen");
+        var contentElements = document.getElementsByClassName("content");
+        loadingScreen.style.display = "none";
     }, 3000);
 });
 
-// gsap.from("#header", {
-//     scale: 0,
-//     duration: 2,
-//     y: -155,
-//     opacity: 0,
-//     scrollTrigger: {
-//         trigger: "#header"
-//     }
-// })
+
