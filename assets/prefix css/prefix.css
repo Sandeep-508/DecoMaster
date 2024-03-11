@@ -57,6 +57,7 @@
     --fs-20: 20px;
     --fs-40: 40px;
     --fs-48: 48px;
+    --fs-100: 100px;
     --fs-144: 144px;
 
 
@@ -673,8 +674,8 @@ p {
     margin-top: 225px;
 } */
 
-.min-vh-90 {
-    min-height: 90vh;
+.min-vh-95 {
+    min-height: 95vh;
 }
 
 .brdr_rad_40 {
@@ -776,6 +777,11 @@ body::-webkit-scrollbar {
     padding-bottom: 115px;
 }
 
+.bottom-right {
+    bottom: 25px;
+    right: 25px;
+}
+
 @media (max-width: 1439.9px) {
     .col-max-md-3 {
         width: 25%;
@@ -794,6 +800,13 @@ body::-webkit-scrollbar {
     }
 }
 
+@media (max-width: 1200px) {
+    .px-100 {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
 @media (max-width: 992px) {
     .col-max-md-4 {
         width: 33.33%;
@@ -801,8 +814,8 @@ body::-webkit-scrollbar {
         padding-right: 12px;
     }
 
-    .fs_70 {
-        font-size: var(--fs-70);
+    .fs_100 {
+        font-size: var(--fs-100);
     }
 
     .px_50 {
@@ -849,10 +862,10 @@ body::-webkit-scrollbar {
         padding-top: 50px;
     }
 
-    .py-40 {
+    /* .py-40 {
         padding-top: 40px;
         padding-bottom: 40px;
-    }
+    } */
 
     .pl-20 {
         padding-left: 20px;
@@ -872,6 +885,10 @@ body::-webkit-scrollbar {
 
     .pb_100_max_768 {
         padding-bottom: 100px;
+    }
+
+    .fs_70 {
+        font-size: var(--fs-70);
     }
 }
 
@@ -900,6 +917,10 @@ body::-webkit-scrollbar {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
+    }
+
+    .fx_wrap {
+        flex-wrap: wrap;
     }
 }
 
@@ -1029,26 +1050,30 @@ body::-webkit-scrollbar {
         /* justify-content: center; */
     }
 
-    .pb-330 {
-        padding-bottom: 330px;
+    .pb-400 {
+        padding-bottom: 400px;
     }
 
     .w_2 {
-        bottom: -100%;
+        bottom: -125%;
     }
 
     .w_3 {
-        bottom: -100%;
+        bottom: -125%;
     }
 
     .w_1 {
-        bottom: -100%;
+        bottom: -125%;
     }
 
     .col_lg_2 {
         width: 14.28%;
         padding-left: 12px;
         padding-right: 12px;
+    }
+
+    .pb-100 {
+        padding-bottom: 100px;
     }
 
     .text-bottom {
@@ -1082,6 +1107,10 @@ body::-webkit-scrollbar {
 
     .pb-700 {
         padding-bottom: 700px;
+    }
+
+    .text-width {
+        width: 230px;
     }
 }
 
@@ -1212,6 +1241,14 @@ body::-webkit-scrollbar {
 
     .mt-225 {
         margin-top: 225px;
+    }
+
+    .h_434px {
+        height: 434px;
+    }
+
+    .h_494px {
+        height: 494px;
     }
 }
 
