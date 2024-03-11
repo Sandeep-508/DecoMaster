@@ -746,9 +746,9 @@ body::-webkit-scrollbar {
 }
 
 .changes_adjust {
-    -webkit-transform: translate(10px, -50%);
-    -ms-transform: translate(10px, -50%);
-    transform: translate(10px, -50%);
+    -webkit-transform: translate(10px, -70%);
+    -ms-transform: translate(10px, -70%);
+    transform: translate(10px, -70%);
 }
 
 .w-h-adjust {
@@ -777,9 +777,21 @@ body::-webkit-scrollbar {
     padding-bottom: 115px;
 }
 
+.text-width {
+    width: 230px;
+}
+
 .bottom-right {
     bottom: 25px;
     right: 25px;
+}
+
+.slick-slide div .item img[alt="random images"] {
+    height: 215px !important;
+}
+
+.slick-slide div .slider_items img[alt="random images"] {
+    height: 215px !important;
 }
 
 @media (max-width: 1439.9px) {
@@ -840,6 +852,14 @@ body::-webkit-scrollbar {
 
     .fs_16 {
         font-size: var(--fs-16);
+    }
+
+    .flex_reverse {
+        flex-direction: column-reverse;
+    }
+
+    .pt-34 {
+        padding-top: 34px;
     }
 }
 
@@ -1108,10 +1128,6 @@ body::-webkit-scrollbar {
     .pb-700 {
         padding-bottom: 700px;
     }
-
-    .text-width {
-        width: 230px;
-    }
 }
 
 
@@ -1123,8 +1139,8 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 1439.9px) {
-    .col_6 {
-        width: 50%;
+    .col_4 {
+        width: 33.33%;
         padding-left: 12px;
         padding-right: 12px;
     }
@@ -1227,8 +1243,8 @@ body::-webkit-scrollbar {
 }
 
 @media (min-width: 992px) {
-    .pt-363px {
-        padding-top: 363px;
+    .pt-223px {
+        padding-top: 223px;
     }
 
     /* .pb-237px {
@@ -1263,6 +1279,12 @@ body::-webkit-scrollbar {
 
     .mb-115 {
         margin-bottom: 115px;
+    }
+
+    .col_6 {
+        width: 50%;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 }
 
@@ -1321,10 +1343,13 @@ body::-webkit-scrollbar {
 
 }
 
-/* @media (min-width: 992px) { */
-
-
-/* } */
+@media (max-width: 576px) {
+    .col_sm_12 {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
 
 @media (max-width: 1400px) {
     .fs_48 {
