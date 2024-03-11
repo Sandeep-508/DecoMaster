@@ -342,6 +342,28 @@
     transition: all 300ms linear;
 }
 
+
+/* loading screen */
+body {
+    margin: 0;
+    font-family: var(--fm);
+}
+
+#loading-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--navbar-color);
+    z-index: 1000;
+}
+
+/* end */
 .white_line {
     width: 100%;
     background: white;

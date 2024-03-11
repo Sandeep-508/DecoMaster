@@ -33,10 +33,19 @@
 </head>
 
 <body>
-
+    <!-- loader -->
+    <div id="loading-screen">
+        <div>
+            <img src="./assets/images/svg/Spinner-1s-200px.svg" alt="spinner">
+        </div>
+        <div>
+            <img src="./assets/images/png/title_img.png" alt="spinner">
+        </div>
+        <p class="pt-16">Loading...</p>
+    </div>
     <!-- hero section -->
 
-    <header>
+    <header id="header">
 
         <!-- NavBar -->
 
@@ -834,7 +843,7 @@
                     </div>
                     <div class="col-max-md-3 col-max-md-4 col-max-md-6 col-max-md-12 py_3">
                         <div class="position_absolute transform_img_1">
-                            <img src="./assets/images/png/our_team_3.png" alt="rnadom images of people" class="w_h_100">
+                            <img src="./assets/images/png/our_team_2.png" alt="rnadom images of people" class="w_h_100">
                             <div class="d-flex align-items-center flex-column">
                                 <p class="fm fw-500 fs-18 lh-27 text-white">Manager</p>
                                 <p class="fm fw-700 fs-24 lh-36 text-white hover_items position-relative">Frank William
@@ -1046,7 +1055,7 @@
 
         <!-- scroll to top -->
 
-        <section class="position-fixed bottom-right z-3 scroll_to_top d_none">
+        <section class="position-fixed bottom-right z-3 scroll_to_top d_none to_top">
             <div>
                 <button class="w-h-adjust border-0"><svg width="50" height="50" viewBox="0 0 50 50" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -1070,6 +1079,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js"
+        integrity="sha512-+LXqbM6YLduaaxq6kNcjMsQgZQUTdZp7FTaArWYFt1nxyFKlQSMdIF/WQ/VgsReERwRD8w/9H9cahFx25UDd+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="./assets/js/app.js"></script>
 
 

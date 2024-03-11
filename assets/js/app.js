@@ -15,3 +15,29 @@ window.addEventListener("scroll", () => {
         });
     });
 });
+
+gsap.from(".to_top", {
+    y: 50,
+    repeat: -1,
+    yoyo: true,
+    duration: 0.3,
+})
+
+
+// loader
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(function () {
+        document.getElementById("loading-screen").style.display = "none";
+        document.getElementsByClassName("content").style.display = "block";
+    }, 3000);
+});
+
+// gsap.from("#header", {
+//     scale: 0,
+//     duration: 2,
+//     y: -155,
+//     opacity: 0,
+//     scrollTrigger: {
+//         trigger: "#header"
+//     }
+// })
