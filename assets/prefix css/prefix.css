@@ -809,11 +809,11 @@ body::-webkit-scrollbar {
 }
 
 .slick-slide div .item img[alt="random images"] {
-    height: 215px !important;
+    height: 320px !important;
 }
 
 .slick-slide div .slider_items img[alt="random images"] {
-    height: 215px !important;
+    height: 320px !important;
 }
 
 @media (max-width: 1439.9px) {
