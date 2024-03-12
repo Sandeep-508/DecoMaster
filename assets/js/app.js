@@ -23,7 +23,6 @@ gsap.from(".to_top", {
     duration: 0.3,
 })
 
-
 // loader
 // document.addEventListener("DOMContentLoaded", function () {
 //     setTimeout(function () {
@@ -53,3 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
         loadingScreen.style.display = "none";
     }, 3000);
 });
+
+
+AOS.init();
